@@ -127,7 +127,20 @@ namespace hotel
 
         private void btnUpdateRoom_Click(object sender, EventArgs e)
         {
-            
+            fUpdateRoom ur = new fUpdateRoom();
+            ur.Show();
+        }
+
+        private void btnRoomType_Click(object sender, EventArgs e)
+        {
+            fRoomType rt = new fRoomType();
+            rt.Show();
+        }
+
+        private void btnCusType_Click(object sender, EventArgs e)
+        {
+            fCustomerType ct = new fCustomerType();
+            ct.Show();
         }
     }
 }

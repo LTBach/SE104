@@ -1,13 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="fAddCusType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="fAddRoomType.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="fadjust.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="fcatalog.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="fCustomerType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="fUpdateCusType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="fUpdateRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="fhome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="fListRental.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Form1.cs">
@@ -32,6 +50,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="fsearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="fRoomType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="fUpdateRoomType.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

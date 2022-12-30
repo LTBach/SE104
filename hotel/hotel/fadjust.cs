@@ -37,5 +37,10 @@ namespace hotel
                 MessageBox.Show("Dien vao cho trong va chac chan GiaTri la so thuc");
             }
         }
+
+        private void txtValue_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
