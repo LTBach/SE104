@@ -38,9 +38,10 @@
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSave.Location = new System.Drawing.Point(368, 212);
+            this.btnSave.Location = new System.Drawing.Point(460, 265);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(145, 54);
+            this.btnSave.Size = new System.Drawing.Size(181, 68);
             this.btnSave.TabIndex = 9;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -48,52 +49,58 @@
             // txtHeSo
             // 
             this.txtHeSo.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtHeSo.Location = new System.Drawing.Point(272, 120);
+            this.txtHeSo.Location = new System.Drawing.Point(340, 150);
+            this.txtHeSo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtHeSo.Name = "txtHeSo";
-            this.txtHeSo.Size = new System.Drawing.Size(241, 38);
+            this.txtHeSo.Size = new System.Drawing.Size(300, 44);
             this.txtHeSo.TabIndex = 8;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(21, 127);
+            this.label2.Location = new System.Drawing.Point(26, 159);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 31);
+            this.label2.Size = new System.Drawing.Size(97, 38);
             this.label2.TabIndex = 7;
             this.label2.Text = "Hệ Số:";
             // 
             // txtCusTypeName
             // 
             this.txtCusTypeName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtCusTypeName.Location = new System.Drawing.Point(272, 26);
+            this.txtCusTypeName.Location = new System.Drawing.Point(340, 32);
+            this.txtCusTypeName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCusTypeName.Name = "txtCusTypeName";
-            this.txtCusTypeName.Size = new System.Drawing.Size(241, 38);
+            this.txtCusTypeName.Size = new System.Drawing.Size(300, 44);
             this.txtCusTypeName.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(21, 33);
+            this.label1.Location = new System.Drawing.Point(26, 41);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(231, 31);
+            this.label1.Size = new System.Drawing.Size(281, 38);
             this.label1.TabIndex = 5;
             this.label1.Text = "Tên Loại Khách Hàng:";
             // 
             // fUpdateCusType
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(533, 293);
+            this.ClientSize = new System.Drawing.Size(666, 366);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtHeSo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCusTypeName);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
             this.Name = "fUpdateCusType";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "fUpdateCusType";
+            this.Text = "CẬP NHẬT LOẠI KHÁCH HÀNG";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataSearch = new System.Windows.Forms.DataGridView();
             this.phongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenLoaiPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,7 +56,7 @@
             this.txtRoomName = new System.Windows.Forms.TextBox();
             this.class1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.class1BindingSource5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.class1BindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.class1BindingSource3)).BeginInit();
@@ -69,7 +69,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.dataSearch);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(401, 15);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
@@ -80,26 +80,26 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh Sách Phòng";
             // 
-            // dataGridView1
+            // dataSearch
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataSearch.AutoGenerateColumns = false;
+            this.dataSearch.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataSearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataSearch.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.phongDataGridViewTextBoxColumn,
             this.TenPhong,
             this.TenLoaiPhong,
             this.dongiaTC,
             this.tinhtrangDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.class1BindingSource5;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(4, 41);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(1161, 804);
-            this.dataGridView1.TabIndex = 0;
+            this.dataSearch.DataSource = this.class1BindingSource5;
+            this.dataSearch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataSearch.Location = new System.Drawing.Point(4, 41);
+            this.dataSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.dataSearch.Name = "dataSearch";
+            this.dataSearch.RowHeadersWidth = 51;
+            this.dataSearch.RowTemplate.Height = 29;
+            this.dataSearch.Size = new System.Drawing.Size(1161, 804);
+            this.dataSearch.TabIndex = 0;
             // 
             // phongDataGridViewTextBoxColumn
             // 
@@ -315,11 +315,13 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "fsearch";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "TRA CỨU PHÒNG";
             this.Load += new System.EventHandler(this.fsearch_Load_1);
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSearch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.class1BindingSource5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.class1BindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.class1BindingSource3)).EndInit();
@@ -350,7 +352,7 @@
         private Label label2;
         private TextBox txtRoomName;
         private BindingSource class1BindingSource;
-        private DataGridView dataGridView1;
+        private DataGridView dataSearch;
         private BindingSource class1BindingSource2;
         private BindingSource class1BindingSource1;
         private ComboBox cbbStatus;

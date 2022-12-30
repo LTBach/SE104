@@ -30,15 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btn_del_custome = new System.Windows.Forms.Button();
-            this.btn_add_customer = new System.Windows.Forms.Button();
+            this.btnDelCustomer = new System.Windows.Forms.Button();
+            this.btnAddCustomer = new System.Windows.Forms.Button();
             this.cbbCustomerType = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNational_ID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtCusName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lbPeopleNum = new System.Windows.Forms.Label();
@@ -52,8 +52,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dateRental = new System.Windows.Forms.DateTimePicker();
+            this.dataCustomer = new System.Windows.Forms.DataGridView();
             this.tenKHDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,22 +64,22 @@
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataCustomer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.class1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btn_del_custome);
-            this.groupBox1.Controls.Add(this.btn_add_customer);
+            this.groupBox1.Controls.Add(this.btnDelCustomer);
+            this.groupBox1.Controls.Add(this.btnAddCustomer);
             this.groupBox1.Controls.Add(this.cbbCustomerType);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtAddress);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtNational_ID);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtName);
+            this.groupBox1.Controls.Add(this.txtCusName);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(14, 0);
@@ -92,27 +92,27 @@
             this.groupBox1.Text = "Thông Tin Khách Hàng";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // btn_del_custome
+            // btnDelCustomer
             // 
-            this.btn_del_custome.Location = new System.Drawing.Point(320, 561);
-            this.btn_del_custome.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_del_custome.Name = "btn_del_custome";
-            this.btn_del_custome.Size = new System.Drawing.Size(229, 64);
-            this.btn_del_custome.TabIndex = 9;
-            this.btn_del_custome.Text = "Xóa";
-            this.btn_del_custome.UseVisualStyleBackColor = true;
-            this.btn_del_custome.Click += new System.EventHandler(this.btn_del_custome_Click);
+            this.btnDelCustomer.Location = new System.Drawing.Point(320, 561);
+            this.btnDelCustomer.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDelCustomer.Name = "btnDelCustomer";
+            this.btnDelCustomer.Size = new System.Drawing.Size(229, 64);
+            this.btnDelCustomer.TabIndex = 9;
+            this.btnDelCustomer.Text = "Xóa";
+            this.btnDelCustomer.UseVisualStyleBackColor = true;
+            this.btnDelCustomer.Click += new System.EventHandler(this.btn_del_custome_Click);
             // 
-            // btn_add_customer
+            // btnAddCustomer
             // 
-            this.btn_add_customer.Location = new System.Drawing.Point(24, 561);
-            this.btn_add_customer.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_add_customer.Name = "btn_add_customer";
-            this.btn_add_customer.Size = new System.Drawing.Size(229, 64);
-            this.btn_add_customer.TabIndex = 8;
-            this.btn_add_customer.Text = "Thêm";
-            this.btn_add_customer.UseVisualStyleBackColor = true;
-            this.btn_add_customer.Click += new System.EventHandler(this.btn_add_customer_Click);
+            this.btnAddCustomer.Location = new System.Drawing.Point(24, 561);
+            this.btnAddCustomer.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddCustomer.Name = "btnAddCustomer";
+            this.btnAddCustomer.Size = new System.Drawing.Size(229, 64);
+            this.btnAddCustomer.TabIndex = 8;
+            this.btnAddCustomer.Text = "Thêm";
+            this.btnAddCustomer.UseVisualStyleBackColor = true;
+            this.btnAddCustomer.Click += new System.EventHandler(this.btn_add_customer_Click);
             // 
             // cbbCustomerType
             // 
@@ -171,14 +171,14 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "CMND\\CCCD:";
             // 
-            // txtName
+            // txtCusName
             // 
-            this.txtName.Location = new System.Drawing.Point(24, 101);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(524, 44);
-            this.txtName.TabIndex = 1;
-            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
+            this.txtCusName.Location = new System.Drawing.Point(24, 101);
+            this.txtCusName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCusName.Name = "txtCusName";
+            this.txtCusName.Size = new System.Drawing.Size(524, 44);
+            this.txtCusName.TabIndex = 1;
+            this.txtCusName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // label1
             // 
@@ -307,8 +307,8 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.dateTimePicker1);
-            this.groupBox3.Controls.Add(this.dataGridView1);
+            this.groupBox3.Controls.Add(this.dateRental);
+            this.groupBox3.Controls.Add(this.dataCustomer);
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox3.Location = new System.Drawing.Point(636, 0);
@@ -320,32 +320,32 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Phiếu Thuê Phòng";
             // 
-            // dateTimePicker1
+            // dateRental
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(319, 48);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(459, 44);
-            this.dateTimePicker1.TabIndex = 5;
+            this.dateRental.Location = new System.Drawing.Point(319, 48);
+            this.dateRental.Name = "dateRental";
+            this.dateRental.Size = new System.Drawing.Size(459, 44);
+            this.dateRental.TabIndex = 5;
             // 
-            // dataGridView1
+            // dataCustomer
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataCustomer.AutoGenerateColumns = false;
+            this.dataCustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.tenKHDataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
-            this.dataGridView1.DataSource = this.khachHangBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 129);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(1249, 831);
-            this.dataGridView1.TabIndex = 4;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataCustomer.DataSource = this.khachHangBindingSource;
+            this.dataCustomer.Location = new System.Drawing.Point(8, 129);
+            this.dataCustomer.Margin = new System.Windows.Forms.Padding(4);
+            this.dataCustomer.Name = "dataCustomer";
+            this.dataCustomer.RowHeadersWidth = 51;
+            this.dataCustomer.RowTemplate.Height = 29;
+            this.dataCustomer.Size = new System.Drawing.Size(1249, 831);
+            this.dataCustomer.TabIndex = 4;
+            this.dataCustomer.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // tenKHDataGridViewTextBoxColumn1
             // 
@@ -398,15 +398,17 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "freserve";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ĐẶT PHÒNG";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataCustomer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.class1BindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -416,14 +418,14 @@
         #endregion
 
         private GroupBox groupBox1;
-        private Button btn_add_customer;
+        private Button btnAddCustomer;
         private ComboBox cbbCustomerType;
         private Label label4;
         private TextBox txtAddress;
         private Label label3;
         private TextBox txtNational_ID;
         private Label label2;
-        private TextBox txtName;
+        private TextBox txtCusName;
         private Label label1;
         private GroupBox groupBox2;
         private Label label7;
@@ -439,16 +441,16 @@
         private BindingSource class1BindingSource;
         private Button btnReserve;
         private BindingSource khachHangBindingSource;
-        private DataGridView dataGridView1;
+        private DataGridView dataCustomer;
         private DataGridViewTextBoxColumn tenKHDataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private Button btn_del_custome;
+        private Button btnDelCustomer;
         private Label lbRoomType;
         private Label lbRoomName;
         private Label lbPeopleNum;
         private Label lbPrice;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dateRental;
     }
 }

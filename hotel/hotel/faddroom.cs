@@ -43,7 +43,7 @@ namespace hotel
         {
             if (cbbRoomType.SelectedIndex == -1 || txtRoomName.Text == "")
             {
-                MessageBox.Show("Please fill in the blank");
+                MessageBox.Show("Vui long dien vao cho trong");
             } 
             else
             {

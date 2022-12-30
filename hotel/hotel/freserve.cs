@@ -28,7 +28,7 @@ namespace hotel
             lbRoomType.Text = dr["TenLoaiPhong"].ToString();
             lbPrice.Text = dr["DonGiaTC"].ToString();
             basePrice = double.Parse(lbPrice.Text);
-            lbPeopleNum.Text = dataGridView1.Rows.Count.ToString();
+            lbPeopleNum.Text = dataCustomer.Rows.Count.ToString();
 
             DataTable dt = exc.executeQuery("SELECT TenLoaiKH FROM LOAIKHACHHANG");
             foreach (DataRow row in dt.Rows) 
@@ -48,7 +48,7 @@ namespace hotel
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            Console.Write(dataGridView1.ColumnCount);
+            Console.Write(dataCustomer.ColumnCount);
             //MessageBox.Show(dataGridView1.ColumnCount);
         }
 
@@ -59,7 +59,7 @@ namespace hotel
             double tmpValue = 0;
             DataTable dt = new DataTable();
             
-            foreach (DataGridViewRow row in dataGridView1.Rows)
+            foreach (DataGridViewRow row in dataCustomer.Rows)
             {
                 if (row.Cells[0].Value == null) continue;
                 dt = exc.executeQuery("SELECT HESO FROM LOAIKHACHHANG WHERE TENLOAIKH = '"+ row.Cells[1].Value.ToString() +"'");//
@@ -75,7 +75,7 @@ namespace hotel
             dt = new DataTable();
             dt = exc.executeQuery("SELECT GIATRI FROM THAMSO WHERE TENTS = 'PHU THU'");
             phuthu = double.Parse(dt.Rows[0]["GIATRI"].ToString());
-            if (dataGridView1.Rows.Count-1 > (int)sokhachTC)
+            if (dataCustomer.Rows.Count-1 > (int)sokhachTC)
                 newPrice = newPrice * (1.0 + phuthu);
             lbPrice.Text = newPrice.ToString();
         }
@@ -86,7 +86,7 @@ namespace hotel
             dt = exc.executeQuery("SELECT GIATRI FROM THAMSO WHERE TENTS = 'SO KHACH TOI DA'");
             double sokhachtoida = double.Parse(dt.Rows[0]["GIATRI"].ToString());
             
-            if (dataGridView1.Rows.Count - 1 >= sokhachtoida)
+            if (dataCustomer.Rows.Count - 1 >= sokhachtoida)
             {
                 MessageBox.Show("So khach khong duoc vuot qua " + sokhachtoida.ToString() + " khach! >:(", "Error");
                 return;
@@ -95,7 +95,7 @@ namespace hotel
             KhachHang newrow = new KhachHang();
             newrow.cmnd = txtNational_ID.Text;
             newrow.diachi = txtAddress.Text;
-            newrow.tenKH = txtName.Text;
+            newrow.tenKH = txtCusName.Text;
             newrow.loaiKH = "";
             if (cbbCustomerType.SelectedIndex != -1) 
             {
@@ -104,16 +104,16 @@ namespace hotel
             if (newrow.notEmpty())
             {
                 khachHangBindingSource.Add(newrow);
-                dataGridView1.Update();
-                dataGridView1.Refresh();
+                dataCustomer.Update();
+                dataCustomer.Refresh();
                 txtAddress.Clear();
-                txtName.Clear();
+                txtCusName.Clear();
                 txtNational_ID.Clear();
                 updatePrice();
             }
             else
                 MessageBox.Show("Khach hang phai co day du thong tin", "Error");
-            lbPeopleNum.Text = (dataGridView1.Rows.Count-1).ToString();
+            lbPeopleNum.Text = (dataCustomer.Rows.Count-1).ToString();
             
             //dataGridView1.Rows.Add(newRow);
         }
@@ -140,11 +140,12 @@ namespace hotel
 
         private void btn_del_custome_Click(object sender, EventArgs e)
         {
-            foreach (DataGridViewRow row in dataGridView1.SelectedRows) {
-                dataGridView1.Rows.RemoveAt(row.Index);
+            foreach (DataGridViewRow row in dataCustomer.SelectedRows) {
+                dataCustomer.Rows.RemoveAt(row.Index);
             }
-            lbPeopleNum.Text = (dataGridView1.Rows.Count-1).ToString();
+            lbPeopleNum.Text = (dataCustomer.Rows.Count-1).ToString();
             updatePrice();
+            MessageBox.Show("Da xoa thanh cong");
         }
 
         private void btnReserve_Click(object sender, EventArgs e)
@@ -157,14 +158,14 @@ namespace hotel
                 return;
             }
             int customerId = exc.getID("MaKH");
-            string rentDay = dateTimePicker1.Value.ToString("yyyy/MM/dd");
+            string rentDay = dateRental.Value.ToString("yyyy/MM/dd");
 
             int reserveId = exc.getID("MaPhieuThue");
 
             exc.executeNonQuery("SET DATEFORMAT DMY");
             exc.executeNonQuery("INSERT INTO PHIEUTHUE VALUES('" + reserveId.ToString() + "','" + rentDay + "'," + lbPrice.Text +
                 "," + lbPeopleNum.Text + ",'" + dr["MaPhong"].ToString() + "', null, null, null)");
-            foreach (DataGridViewRow row in dataGridView1.Rows) 
+            foreach (DataGridViewRow row in dataCustomer.Rows) 
             {
                 if (row.Cells[0].Value == null) continue;
 

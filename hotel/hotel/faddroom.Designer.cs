@@ -124,9 +124,10 @@
             this.Controls.Add(this.txtRoomName);
             this.Controls.Add(this.Ten);
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "faddroom";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Thêm Phòng";
+            this.Text = "THÊM PHÒNG";
             this.ResumeLayout(false);
             this.PerformLayout();
 

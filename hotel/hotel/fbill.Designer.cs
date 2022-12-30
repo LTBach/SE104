@@ -30,34 +30,34 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btn_delete = new System.Windows.Forms.Button();
-            this.btn_add = new System.Windows.Forms.Button();
+            this.btnDelRental = new System.Windows.Forms.Button();
+            this.btnAddRental = new System.Windows.Forms.Button();
             this.txtRoomName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateBill = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtPayer = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnPayBill = new System.Windows.Forms.Button();
             this.lbTotalPrice = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataBill = new System.Windows.Forms.DataGridView();
+            this.Phong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hoaDonBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.label5 = new System.Windows.Forms.Label();
             this.hoaDonBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.class1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hoaDonBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.Phong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBill)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.class1BindingSource)).BeginInit();
@@ -66,8 +66,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btn_delete);
-            this.groupBox1.Controls.Add(this.btn_add);
+            this.groupBox1.Controls.Add(this.btnDelRental);
+            this.groupBox1.Controls.Add(this.btnAddRental);
             this.groupBox1.Controls.Add(this.txtRoomName);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -80,27 +80,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Phòng Thanh Toán";
             // 
-            // btn_delete
+            // btnDelRental
             // 
-            this.btn_delete.Location = new System.Drawing.Point(248, 135);
-            this.btn_delete.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(168, 51);
-            this.btn_delete.TabIndex = 3;
-            this.btn_delete.Text = "Xóa";
-            this.btn_delete.UseVisualStyleBackColor = true;
-            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
+            this.btnDelRental.Location = new System.Drawing.Point(248, 135);
+            this.btnDelRental.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDelRental.Name = "btnDelRental";
+            this.btnDelRental.Size = new System.Drawing.Size(168, 51);
+            this.btnDelRental.TabIndex = 3;
+            this.btnDelRental.Text = "Xóa";
+            this.btnDelRental.UseVisualStyleBackColor = true;
+            this.btnDelRental.Click += new System.EventHandler(this.btn_delete_Click);
             // 
-            // btn_add
+            // btnAddRental
             // 
-            this.btn_add.Location = new System.Drawing.Point(31, 135);
-            this.btn_add.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(156, 51);
-            this.btn_add.TabIndex = 2;
-            this.btn_add.Text = "Thêm";
-            this.btn_add.UseVisualStyleBackColor = true;
-            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
+            this.btnAddRental.Location = new System.Drawing.Point(31, 135);
+            this.btnAddRental.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddRental.Name = "btnAddRental";
+            this.btnAddRental.Size = new System.Drawing.Size(156, 51);
+            this.btnAddRental.TabIndex = 2;
+            this.btnAddRental.Text = "Thêm";
+            this.btnAddRental.UseVisualStyleBackColor = true;
+            this.btnAddRental.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // txtRoomName
             // 
@@ -123,7 +123,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
+            this.groupBox2.Controls.Add(this.dateBill);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.txtAddress);
             this.groupBox2.Controls.Add(this.label3);
@@ -139,14 +139,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông Tin Hóa Đơn";
             // 
-            // dateTimePicker1
+            // dateBill
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(366, 160);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(453, 44);
-            this.dateTimePicker1.TabIndex = 6;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.dateBill.Location = new System.Drawing.Point(366, 160);
+            this.dateBill.Margin = new System.Windows.Forms.Padding(4);
+            this.dateBill.Name = "dateBill";
+            this.dateBill.Size = new System.Drawing.Size(453, 44);
+            this.dateBill.TabIndex = 6;
+            this.dateBill.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // label4
             // 
@@ -196,9 +196,9 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button1);
+            this.groupBox3.Controls.Add(this.btnPayBill);
             this.groupBox3.Controls.Add(this.lbTotalPrice);
-            this.groupBox3.Controls.Add(this.dataGridView1);
+            this.groupBox3.Controls.Add(this.dataBill);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox3.Location = new System.Drawing.Point(15, 220);
@@ -210,63 +210,42 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Danh Sách Phiếu Thuê:";
             // 
-            // button1
+            // btnPayBill
             // 
-            this.button1.Location = new System.Drawing.Point(1097, 584);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(187, 51);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Thanh Toán";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.btn_pay_Click);
+            this.btnPayBill.Location = new System.Drawing.Point(1097, 584);
+            this.btnPayBill.Name = "btnPayBill";
+            this.btnPayBill.Size = new System.Drawing.Size(187, 51);
+            this.btnPayBill.TabIndex = 10;
+            this.btnPayBill.Text = "Thanh Toán";
+            this.btnPayBill.UseVisualStyleBackColor = true;
+            this.btnPayBill.Click += new System.EventHandler(this.btn_pay_Click);
             // 
             // lbTotalPrice
             // 
             this.lbTotalPrice.AutoSize = true;
             this.lbTotalPrice.Location = new System.Drawing.Point(139, 597);
             this.lbTotalPrice.Name = "lbTotalPrice";
-            this.lbTotalPrice.Size = new System.Drawing.Size(0, 38);
+            this.lbTotalPrice.Size = new System.Drawing.Size(32, 38);
             this.lbTotalPrice.TabIndex = 9;
+            this.lbTotalPrice.Text = "0";
             // 
-            // dataGridView1
+            // dataBill
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataBill.AutoGenerateColumns = false;
+            this.dataBill.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Phong,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
-            this.dataGridView1.DataSource = this.hoaDonBindingSource2;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 70);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(1317, 508);
-            this.dataGridView1.TabIndex = 8;
-            // 
-            // hoaDonBindingSource2
-            // 
-            this.hoaDonBindingSource2.DataSource = typeof(hotel.HoaDon);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(31, 597);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 38);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Trị Giá:";
-            // 
-            // hoaDonBindingSource1
-            // 
-            this.hoaDonBindingSource1.DataSource = typeof(hotel.HoaDon);
-            // 
-            // hoaDonBindingSource
-            // 
-            this.hoaDonBindingSource.DataSource = typeof(hotel.HoaDon);
+            this.dataBill.DataSource = this.hoaDonBindingSource2;
+            this.dataBill.Location = new System.Drawing.Point(0, 70);
+            this.dataBill.Name = "dataBill";
+            this.dataBill.RowHeadersWidth = 62;
+            this.dataBill.RowTemplate.Height = 33;
+            this.dataBill.Size = new System.Drawing.Size(1317, 508);
+            this.dataBill.TabIndex = 8;
             // 
             // Phong
             // 
@@ -296,6 +275,28 @@
             this.dataGridViewTextBoxColumn4.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
+            // hoaDonBindingSource2
+            // 
+            this.hoaDonBindingSource2.DataSource = typeof(hotel.HoaDon);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(31, 597);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(101, 38);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Trị Giá:";
+            // 
+            // hoaDonBindingSource1
+            // 
+            this.hoaDonBindingSource1.DataSource = typeof(hotel.HoaDon);
+            // 
+            // hoaDonBindingSource
+            // 
+            this.hoaDonBindingSource.DataSource = typeof(hotel.HoaDon);
+            // 
             // fbill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -305,16 +306,17 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MinimizeBox = false;
             this.Name = "fbill";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Hóa Đơn";
+            this.Text = "HÓA ĐƠN";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBill)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.class1BindingSource)).EndInit();
@@ -327,8 +329,8 @@
 
         private GroupBox groupBox1;
         private Label label1;
-        private Button btn_delete;
-        private Button btn_add;
+        private Button btnDelRental;
+        private Button btnAddRental;
         private TextBox txtRoomName;
         private GroupBox groupBox2;
         private TextBox txtAddress;
@@ -341,16 +343,16 @@
         private DataGridViewTextBoxColumn songaythueDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn dongiaDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn thanhtienDataGridViewTextBoxColumn;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dateBill;
         private Label label4;
         private Label label5;
         private BindingSource hoaDonBindingSource;
         private DataGridViewTextBoxColumn dpnGiaDataGridViewTextBoxColumn;
         private BindingSource hoaDonBindingSource1;
-        private DataGridView dataGridView1;
+        private DataGridView dataBill;
         private BindingSource hoaDonBindingSource2;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private Button button1;
+        private Button btnPayBill;
         private Label lbTotalPrice;
         private DataGridViewTextBoxColumn Phong;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;

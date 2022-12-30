@@ -37,16 +37,19 @@ namespace hotel
                 return;
             }
             listRoomName.Add(txtRoomName.Text);
+            txtRoomName.Text = "";
             showTable();
         }
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
             //kiem tra phong ton tai
-            foreach (DataGridViewRow row in dataGridView1.SelectedRows)
+            foreach (DataGridViewRow row in dataBill.SelectedRows)
             {
+
+                lbTotalPrice.Text = (Int32.Parse(lbTotalPrice.Text) - Int32.Parse(row.Cells[3].Value.ToString())).ToString();
                 listRoomName.Remove(row.Cells[0].Value.ToString());
-                dataGridView1.Rows.RemoveAt(row.Index);
+                dataBill.Rows.RemoveAt(row.Index);
             }
         }
         public void showTable()
@@ -56,7 +59,7 @@ namespace hotel
             dt.Columns.Add("SoNgayThue");
             dt.Columns.Add("DonGia");
             dt.Columns.Add("ThanhTien");
-            DateTime billDay = dateTimePicker1.Value;
+            DateTime billDay = dateBill.Value;
             List<string> delNameList = new List<string> { };
             double TotalPrice = 0;
             foreach (string roomName in listRoomName)
@@ -72,10 +75,10 @@ namespace hotel
                 DateTime rentDay = DateTime.Parse(dt1.Rows[0]["NgayBDThue"].ToString());
                 DataRow dr = dt.NewRow();
                 dr[0] = roomName;
-                dr[1] = Math.Ceiling((billDay - rentDay).TotalDays);
+                dr[1] = Math.Floor((billDay - rentDay).TotalDays);
                 dr[2] = dt1.Rows[0]["DonGia"].ToString();
-                dr[3] = Math.Ceiling((billDay - rentDay).TotalDays) * Convert.ToDouble(dr[2]);
-                TotalPrice += Math.Ceiling((billDay - rentDay).TotalDays) * Convert.ToDouble(dr[2]);
+                dr[3] = Math.Floor((billDay - rentDay).TotalDays) * Convert.ToDouble(dr[2]);
+                TotalPrice += Math.Floor((billDay - rentDay).TotalDays) * Convert.ToDouble(dr[2]);
                 dt.Rows.Add(dr);   
             }
             foreach (string RoomName in delNameList)
@@ -91,7 +94,7 @@ namespace hotel
             {
                 lbTotalPrice.Text = TotalPrice.ToString();
             }
-            dataGridView1.DataSource = dt;
+            dataBill.DataSource = dt;
         }
 
         private void btn_pay_Click(object sender, EventArgs e)
@@ -101,11 +104,11 @@ namespace hotel
                 int billId = exc.getID("SoHD");
 
                 exc.executeNonQuery("INSERT INTO HOADON VALUES('" + billId.ToString() + "','" + lbTotalPrice.Text + "','"
-                    + txtPayer.Text + "','" + txtAddress.Text + "','" + dateTimePicker1.Value.ToString("yyyy/MM/dd") + "')");
+                    + txtPayer.Text + "','" + txtAddress.Text + "','" + dateBill.Value.ToString("yyyy/MM/dd") + "')");
                
                 
                 
-                DateTime billDay = dateTimePicker1.Value;
+                DateTime billDay = dateBill.Value;
                 foreach (string roomName in listRoomName)
                 {
                     DataTable dt1 = exc.executeQuery("SELECT MaPhieuThue, NgayBDThue, DonGia FROM PHIEUTHUE WHERE SoNgayThue is" +
@@ -120,13 +123,13 @@ namespace hotel
                     DateTime rentDay = DateTime.Parse(dt1.Rows[0]["NgayBDThue"].ToString());
                     DataRow dr = dt.NewRow();
                     dr[0] = roomName;
-                    dr[1] = Math.Ceiling((billDay - rentDay).TotalDays);
+                    dr[1] = Math.Floor((billDay - rentDay).TotalDays);
                     dr[2] = dt1.Rows[0]["DonGia"].ToString();
-                    dr[3] = Math.Ceiling((billDay - rentDay).TotalDays) * Convert.ToDouble(dr[2]);
+                    dr[3] = Math.Floor((billDay - rentDay).TotalDays) * Convert.ToDouble(dr[2]);
 
                     string maphieuthue = dt1.Rows[0]["MaPhieuThue"].ToString();
-                    songay = Math.Ceiling((billDay - rentDay).TotalDays);
-                    thanhtien = Math.Ceiling((billDay - rentDay).TotalDays) * Convert.ToDouble(dr[2]);
+                    songay = Math.Floor((billDay - rentDay).TotalDays);
+                    thanhtien = Math.Floor((billDay - rentDay).TotalDays) * Convert.ToDouble(dr[2]);
 
                     exc.executeNonQuery("UPDATE PHIEUTHUE SET SOHD = '" + billId.ToString() + "',THANHTIEN = " + thanhtien.ToString() + ",SONGAYTHUE = " + songay.ToString() + " WHERE MaPhieuThue = '" + maphieuthue +"'");
 

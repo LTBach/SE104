@@ -49,7 +49,7 @@
             // 
             this.txtValue.Location = new System.Drawing.Point(186, 121);
             this.txtValue.Name = "txtValue";
-            this.txtValue.Size = new System.Drawing.Size(259, 38);
+            this.txtValue.Size = new System.Drawing.Size(259, 44);
             this.txtValue.TabIndex = 3;
             this.txtValue.TextChanged += new System.EventHandler(this.txtValue_TextChanged);
             // 
@@ -59,7 +59,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(18, 126);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 31);
+            this.label2.Size = new System.Drawing.Size(101, 38);
             this.label2.TabIndex = 2;
             this.label2.Text = "Giá Trị:";
             // 
@@ -68,7 +68,7 @@
             this.cbbRule.FormattingEnabled = true;
             this.cbbRule.Location = new System.Drawing.Point(186, 41);
             this.cbbRule.Name = "cbbRule";
-            this.cbbRule.Size = new System.Drawing.Size(259, 39);
+            this.cbbRule.Size = new System.Drawing.Size(259, 46);
             this.cbbRule.TabIndex = 1;
             // 
             // label1
@@ -77,13 +77,13 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(18, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 31);
+            this.label1.Size = new System.Drawing.Size(192, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên Quy Định:";
             // 
             // fadjust
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 38F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 350);
             this.Controls.Add(this.btnSave);
@@ -92,6 +92,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MaximizeBox = false;
             this.Name = "fadjust";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ĐIỀU CHỈNH CÁC THAM SỐ";

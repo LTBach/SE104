@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.btn_add_room = new System.Windows.Forms.Button();
+            this.btnAddRoom = new System.Windows.Forms.Button();
             this.btnUpdateRoom = new System.Windows.Forms.Button();
             this.btnDelRoom = new System.Windows.Forms.Button();
             this.class1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataCatalog = new System.Windows.Forms.DataGridView();
             this.tenphong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.loaiphong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dongiaTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,7 +59,7 @@
             this.btnCusType = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.class1BindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataCatalog)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.class1BindingSource5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.class1BindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.class1BindingSource2)).BeginInit();
@@ -70,21 +70,23 @@
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btn_add_room
+            // btnAddRoom
             // 
-            this.btn_add_room.Location = new System.Drawing.Point(36, 44);
-            this.btn_add_room.Name = "btn_add_room";
-            this.btn_add_room.Size = new System.Drawing.Size(199, 48);
-            this.btn_add_room.TabIndex = 3;
-            this.btn_add_room.Text = "Thêm";
-            this.btn_add_room.UseVisualStyleBackColor = true;
-            this.btn_add_room.Click += new System.EventHandler(this.btn_add_room_Click);
+            this.btnAddRoom.Location = new System.Drawing.Point(45, 55);
+            this.btnAddRoom.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddRoom.Name = "btnAddRoom";
+            this.btnAddRoom.Size = new System.Drawing.Size(249, 60);
+            this.btnAddRoom.TabIndex = 3;
+            this.btnAddRoom.Text = "Thêm";
+            this.btnAddRoom.UseVisualStyleBackColor = true;
+            this.btnAddRoom.Click += new System.EventHandler(this.btn_add_room_Click);
             // 
             // btnUpdateRoom
             // 
-            this.btnUpdateRoom.Location = new System.Drawing.Point(758, 44);
+            this.btnUpdateRoom.Location = new System.Drawing.Point(948, 55);
+            this.btnUpdateRoom.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdateRoom.Name = "btnUpdateRoom";
-            this.btnUpdateRoom.Size = new System.Drawing.Size(199, 50);
+            this.btnUpdateRoom.Size = new System.Drawing.Size(249, 62);
             this.btnUpdateRoom.TabIndex = 2;
             this.btnUpdateRoom.Text = "Sửa";
             this.btnUpdateRoom.UseVisualStyleBackColor = true;
@@ -92,9 +94,10 @@
             // 
             // btnDelRoom
             // 
-            this.btnDelRoom.Location = new System.Drawing.Point(398, 44);
+            this.btnDelRoom.Location = new System.Drawing.Point(498, 55);
+            this.btnDelRoom.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelRoom.Name = "btnDelRoom";
-            this.btnDelRoom.Size = new System.Drawing.Size(199, 46);
+            this.btnDelRoom.Size = new System.Drawing.Size(249, 58);
             this.btnDelRoom.TabIndex = 1;
             this.btnDelRoom.Text = "Xóa";
             this.btnDelRoom.UseVisualStyleBackColor = true;
@@ -107,35 +110,38 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnUpdateRoom);
-            this.groupBox1.Controls.Add(this.btn_add_room);
+            this.groupBox1.Controls.Add(this.btnAddRoom);
             this.groupBox1.Controls.Add(this.btnDelRoom);
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.dataCatalog);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(324, 16);
+            this.groupBox1.Location = new System.Drawing.Point(405, 20);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1011, 679);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(1264, 849);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh Sách Phòng";
             // 
-            // dataGridView1
+            // dataCatalog
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataCatalog.AutoGenerateColumns = false;
+            this.dataCatalog.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataCatalog.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataCatalog.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.tenphong,
             this.loaiphong,
             this.dongiaTC,
             this.ghichuDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.class1BindingSource5;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 115);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(1010, 558);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataCatalog.DataSource = this.class1BindingSource5;
+            this.dataCatalog.Location = new System.Drawing.Point(0, 144);
+            this.dataCatalog.Margin = new System.Windows.Forms.Padding(4);
+            this.dataCatalog.Name = "dataCatalog";
+            this.dataCatalog.RowHeadersWidth = 51;
+            this.dataCatalog.RowTemplate.Height = 29;
+            this.dataCatalog.Size = new System.Drawing.Size(1262, 698);
+            this.dataCatalog.TabIndex = 0;
+            this.dataCatalog.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // tenphong
             // 
@@ -187,53 +193,59 @@
             // 
             // txtRoomName
             // 
-            this.txtRoomName.Location = new System.Drawing.Point(28, 78);
+            this.txtRoomName.Location = new System.Drawing.Point(35, 98);
+            this.txtRoomName.Margin = new System.Windows.Forms.Padding(4);
             this.txtRoomName.Name = "txtRoomName";
-            this.txtRoomName.Size = new System.Drawing.Size(233, 38);
+            this.txtRoomName.Size = new System.Drawing.Size(290, 44);
             this.txtRoomName.TabIndex = 2;
             this.txtRoomName.TextChanged += new System.EventHandler(this.txtRoomName_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(28, 44);
+            this.label2.Location = new System.Drawing.Point(35, 55);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 31);
+            this.label2.Size = new System.Drawing.Size(154, 38);
             this.label2.TabIndex = 3;
             this.label2.Text = "Tên Phòng:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(28, 146);
+            this.label3.Location = new System.Drawing.Point(35, 182);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 31);
+            this.label3.Size = new System.Drawing.Size(161, 38);
             this.label3.TabIndex = 5;
             this.label3.Text = "Loại Phòng:";
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(28, 277);
+            this.txtPrice.Location = new System.Drawing.Point(35, 346);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(233, 38);
+            this.txtPrice.Size = new System.Drawing.Size(290, 44);
             this.txtPrice.TabIndex = 6;
             this.txtPrice.TextChanged += new System.EventHandler(this.txtPrice_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(28, 242);
+            this.label4.Location = new System.Drawing.Point(35, 302);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 31);
+            this.label4.Size = new System.Drawing.Size(124, 38);
             this.label4.TabIndex = 7;
             this.label4.Text = "Đơn Giá:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(28, 342);
+            this.label5.Location = new System.Drawing.Point(35, 428);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(126, 31);
+            this.label5.Size = new System.Drawing.Size(154, 38);
             this.label5.TabIndex = 9;
             this.label5.Text = "Tình Trạng:";
             // 
@@ -242,9 +254,10 @@
             this.cbbRoomType.FormattingEnabled = true;
             this.cbbRoomType.Items.AddRange(new object[] {
             ""});
-            this.cbbRoomType.Location = new System.Drawing.Point(28, 180);
+            this.cbbRoomType.Location = new System.Drawing.Point(35, 225);
+            this.cbbRoomType.Margin = new System.Windows.Forms.Padding(4);
             this.cbbRoomType.Name = "cbbRoomType";
-            this.cbbRoomType.Size = new System.Drawing.Size(233, 39);
+            this.cbbRoomType.Size = new System.Drawing.Size(290, 46);
             this.cbbRoomType.TabIndex = 10;
             this.cbbRoomType.SelectedIndexChanged += new System.EventHandler(this.cbbRoomType_SelectedIndexChanged);
             // 
@@ -253,9 +266,10 @@
             this.cbbStatus.FormattingEnabled = true;
             this.cbbStatus.Items.AddRange(new object[] {
             ""});
-            this.cbbStatus.Location = new System.Drawing.Point(28, 376);
+            this.cbbStatus.Location = new System.Drawing.Point(35, 470);
+            this.cbbStatus.Margin = new System.Windows.Forms.Padding(4);
             this.cbbStatus.Name = "cbbStatus";
-            this.cbbStatus.Size = new System.Drawing.Size(233, 39);
+            this.cbbStatus.Size = new System.Drawing.Size(290, 46);
             this.cbbStatus.TabIndex = 14;
             this.cbbStatus.SelectedIndexChanged += new System.EventHandler(this.cbbStatus_SelectedIndexChanged);
             // 
@@ -270,9 +284,11 @@
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.txtRoomName);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox2.Location = new System.Drawing.Point(12, 16);
+            this.groupBox2.Location = new System.Drawing.Point(15, 20);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(306, 431);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(382, 539);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông Tin";
@@ -281,18 +297,21 @@
             // 
             this.groupBox3.Controls.Add(this.btnRoomType);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox3.Location = new System.Drawing.Point(12, 458);
+            this.groupBox3.Location = new System.Drawing.Point(15, 572);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(306, 111);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Size = new System.Drawing.Size(382, 139);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Loại Phòng";
             // 
             // btnRoomType
             // 
-            this.btnRoomType.Location = new System.Drawing.Point(71, 46);
+            this.btnRoomType.Location = new System.Drawing.Point(89, 58);
+            this.btnRoomType.Margin = new System.Windows.Forms.Padding(4);
             this.btnRoomType.Name = "btnRoomType";
-            this.btnRoomType.Size = new System.Drawing.Size(142, 46);
+            this.btnRoomType.Size = new System.Drawing.Size(178, 58);
             this.btnRoomType.TabIndex = 0;
             this.btnRoomType.Text = "Chỉnh Sửa";
             this.btnRoomType.UseVisualStyleBackColor = true;
@@ -302,18 +321,21 @@
             // 
             this.groupBox4.Controls.Add(this.btnCusType);
             this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox4.Location = new System.Drawing.Point(12, 578);
+            this.groupBox4.Location = new System.Drawing.Point(15, 722);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(306, 111);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox4.Size = new System.Drawing.Size(382, 139);
             this.groupBox4.TabIndex = 7;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Loại Khách Hàng";
             // 
             // btnCusType
             // 
-            this.btnCusType.Location = new System.Drawing.Point(71, 40);
+            this.btnCusType.Location = new System.Drawing.Point(89, 50);
+            this.btnCusType.Margin = new System.Windows.Forms.Padding(4);
             this.btnCusType.Name = "btnCusType";
-            this.btnCusType.Size = new System.Drawing.Size(142, 46);
+            this.btnCusType.Size = new System.Drawing.Size(178, 58);
             this.btnCusType.TabIndex = 1;
             this.btnCusType.Text = "Chỉnh Sửa";
             this.btnCusType.UseVisualStyleBackColor = true;
@@ -321,20 +343,22 @@
             // 
             // fcatalog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1346, 707);
+            this.ClientSize = new System.Drawing.Size(1682, 884);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "fcatalog";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DANH MỤC PHÒNG";
             ((System.ComponentModel.ISupportInitialize)(this.class1BindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataCatalog)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.class1BindingSource5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.class1BindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.class1BindingSource2)).EndInit();
@@ -350,7 +374,7 @@
 
         #endregion
         private Button btnDelRoom;
-        private Button btn_add_room;
+        private Button btnAddRoom;
         private Button btnUpdateRoom;
         private BindingSource class1BindingSource;
         private GroupBox groupBox1;
@@ -362,7 +386,7 @@
         private DataGridViewTextBoxColumn tinhtrangDataGridViewTextBoxColumn;
         private BindingSource class1BindingSource4;
         private BindingSource class1BindingSource3;
-        private DataGridView dataGridView1;
+        private DataGridView dataCatalog;
         private BindingSource class1BindingSource5;
         private DataGridViewTextBoxColumn phongDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn dongiaDataGridViewTextBoxColumn;

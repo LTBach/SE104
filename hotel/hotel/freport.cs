@@ -64,11 +64,11 @@ namespace hotel
                 {
                     dr[1] = double.Parse(dr[2].ToString()) / totalRevenue * 100.0;
                 }
-                else dr[1] = 100;
+                else dr[1] = 0;
                 
                 dt.Rows.Add(dr);
             }
-                dataGridView1.DataSource = dt;
+                dataReport.DataSource = dt;
         }
 
     }

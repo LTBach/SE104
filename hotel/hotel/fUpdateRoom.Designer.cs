@@ -40,9 +40,10 @@
             // btnSaveRoom
             // 
             this.btnSaveRoom.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSaveRoom.Location = new System.Drawing.Point(319, 245);
+            this.btnSaveRoom.Location = new System.Drawing.Point(399, 306);
+            this.btnSaveRoom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSaveRoom.Name = "btnSaveRoom";
-            this.btnSaveRoom.Size = new System.Drawing.Size(133, 57);
+            this.btnSaveRoom.Size = new System.Drawing.Size(166, 71);
             this.btnSaveRoom.TabIndex = 13;
             this.btnSaveRoom.Text = "SAVE";
             this.btnSaveRoom.UseVisualStyleBackColor = true;
@@ -51,62 +52,68 @@
             // 
             this.cbbRoomType.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbbRoomType.FormattingEnabled = true;
-            this.cbbRoomType.Location = new System.Drawing.Point(195, 108);
+            this.cbbRoomType.Location = new System.Drawing.Point(244, 135);
+            this.cbbRoomType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbbRoomType.Name = "cbbRoomType";
-            this.cbbRoomType.Size = new System.Drawing.Size(257, 39);
+            this.cbbRoomType.Size = new System.Drawing.Size(320, 46);
             this.cbbRoomType.TabIndex = 12;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(23, 108);
+            this.label2.Location = new System.Drawing.Point(29, 135);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(133, 31);
+            this.label2.Size = new System.Drawing.Size(161, 38);
             this.label2.TabIndex = 11;
             this.label2.Text = "Loại Phòng:";
             // 
             // txtNote
             // 
             this.txtNote.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtNote.Location = new System.Drawing.Point(195, 184);
+            this.txtNote.Location = new System.Drawing.Point(244, 230);
+            this.txtNote.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNote.Name = "txtNote";
-            this.txtNote.Size = new System.Drawing.Size(257, 38);
+            this.txtNote.Size = new System.Drawing.Size(320, 44);
             this.txtNote.TabIndex = 10;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(23, 184);
+            this.label1.Location = new System.Drawing.Point(29, 230);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 31);
+            this.label1.Size = new System.Drawing.Size(122, 38);
             this.label1.TabIndex = 9;
             this.label1.Text = "Ghi Chú:";
             // 
             // txtRoomName
             // 
             this.txtRoomName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtRoomName.Location = new System.Drawing.Point(195, 28);
+            this.txtRoomName.Location = new System.Drawing.Point(244, 35);
+            this.txtRoomName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRoomName.Name = "txtRoomName";
-            this.txtRoomName.Size = new System.Drawing.Size(257, 38);
+            this.txtRoomName.Size = new System.Drawing.Size(320, 44);
             this.txtRoomName.TabIndex = 8;
             // 
             // Ten
             // 
             this.Ten.AutoSize = true;
             this.Ten.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Ten.Location = new System.Drawing.Point(23, 28);
+            this.Ten.Location = new System.Drawing.Point(29, 35);
+            this.Ten.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Ten.Name = "Ten";
-            this.Ten.Size = new System.Drawing.Size(126, 31);
+            this.Ten.Size = new System.Drawing.Size(154, 38);
             this.Ten.TabIndex = 7;
             this.Ten.Text = "Tên Phòng:";
             // 
-            // fEditRoom
+            // fUpdateRoom
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(473, 320);
+            this.ClientSize = new System.Drawing.Size(591, 400);
             this.Controls.Add(this.btnSaveRoom);
             this.Controls.Add(this.cbbRoomType);
             this.Controls.Add(this.label2);
@@ -114,7 +121,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtRoomName);
             this.Controls.Add(this.Ten);
-            this.Name = "fEditRoom";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
+            this.Name = "fUpdateRoom";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sửa Phòng";
             this.ResumeLayout(false);
