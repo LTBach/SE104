@@ -41,9 +41,16 @@ namespace hotel
             {
                 MessageBox.Show("Khong sua duoc phong do phong do van con phieu thue");
                 Close();
+                return;
             }
 
-            if(cbbRoomType.SelectedIndex != -1)
+            if (exc.executeQuery("SELECT * FROM DANHMUCPHONG WHERE TenPhong = '"+ roomName + "'").Rows.Count != 0)
+            {
+                MessageBox.Show("Trung ten voi phong da co");
+                return;
+            }
+
+            if (cbbRoomType.SelectedIndex != -1)
             {
                 string roomTypeId = exc.executeQuery("SELECT MaLoaiPhong FROM LOAIPHONG WHERE TenLoaiPhong = '"
                     + cbbRoomType.SelectedItem.ToString() + "'").Rows[0]["MaLoaiPhong"].ToString();

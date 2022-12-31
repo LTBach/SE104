@@ -35,6 +35,12 @@ namespace hotel
                 return;
             }
 
+            if (exc.executeQuery("SELECT * FROM LOAIPHONG WHERE TenLoaiPhong = '" + txtRoomTypeName.Text + "'").Rows.Count != 0)
+            {
+                MessageBox.Show("Trung ten voi loai phong da co");
+                return;
+            }
+
             if (txtPrice.Text != "")
             {
                 double Value;

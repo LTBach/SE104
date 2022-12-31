@@ -36,6 +36,12 @@ namespace hotel
                 return;
             }
 
+            if (exc.executeQuery("SELECT * FROM LOAIKHACHHANG WHERE TenLoaiKH = '" + txtCusTypeName.Text + "'").Rows.Count != 0)
+            {
+                MessageBox.Show("Trung ten voi loai khach hang da co");
+                return;
+            }
+
             if (txtHeSo.Text != "")
             {
                 double Value;
