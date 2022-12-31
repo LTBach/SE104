@@ -35,19 +35,33 @@ namespace hotel
 
         private void btnEditRoomType_Click(object sender, EventArgs e)
         {
-            fUpdateRoomType update_rt = new fUpdateRoomType(); 
+            if (dataRoomType.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui long chon 1 dong");
+                return;
+            }
+
+            if (dataRoomType.SelectedRows.Count > 1)
+            {
+                MessageBox.Show("Vui long chi chon 1 dong");
+                return;
+            }
+
+            fUpdateRoomType update_rt = new fUpdateRoomType(dataRoomType.SelectedRows[0].Cells[0].Value.ToString()); 
             update_rt.Show();
+            update_rt.FormClosed += new FormClosedEventHandler(fUpdateRoomType_Closed);
         }
 
+        void fUpdateRoomType_Closed(object sender, FormClosedEventArgs e)
+        {
+            fUpdateRoomType update_rt = (fUpdateRoomType)sender;
+            showTable();
+        }
         public void showTable()
         {
             dataRoomType.DataSource = exc.executeQuery("SELECT MaLoaiPhong as 'Mã Loại Phòng', TenLoaiPhong as 'Tên Loại Phòng',DonGiaTC as 'Đơn giá', SoLuong as 'Số lượng' FROM LOAIPHONG");
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnDelRoomType_Click(object sender, EventArgs e)
         {
@@ -74,9 +88,5 @@ namespace hotel
             showTable();
         }
 
-        private void dataRoomType_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }

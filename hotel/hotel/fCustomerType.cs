@@ -35,10 +35,28 @@ namespace hotel
 
         private void btnEditCusType_Click(object sender, EventArgs e)
         {
-            fUpdateCusType update_ct = new fUpdateCusType();
+            if (dataCusType.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui long chon 1 dong");
+                return;
+            }
+
+            if (dataCusType.SelectedRows.Count > 1)
+            {
+                MessageBox.Show("Vui long chi chon 1 dong");
+                return;
+            }
+
+            fUpdateCusType update_ct = new fUpdateCusType(dataCusType.SelectedRows[0].Cells[0].Value.ToString());
             update_ct.Show();
+            update_ct.FormClosed += new FormClosedEventHandler(fUpdateCusType_Closed);
         }
 
+        void fUpdateCusType_Closed(object sender, FormClosedEventArgs e)
+        {
+            fUpdateCusType update_ct = (fUpdateCusType)sender;
+            showTable();
+        }
         public void showTable()
         {
             dataCusType.DataSource = exc.executeQuery("SELECT MaLoaiKH as 'Mã Loại KH', TenLoaiKH as 'Tên Loại KH', HeSo as 'Hệ Số' FROM LOAIKHACHHANG");
@@ -58,15 +76,15 @@ namespace hotel
                 return;
             }
 
-            string MaKH = dataCusType.SelectedRows[0].Cells[0].Value.ToString();
+            string MaLKH = dataCusType.SelectedRows[0].Cells[0].Value.ToString();
 
-            if (exc.executeQuery("SELECT MaKH FROM KHACHHANG WHERE MaLoaiKH = '" + MaKH + "'").Rows.Count != 0)
+            if (exc.executeQuery("SELECT MaKH FROM KHACHHANG WHERE MaLoaiKH = '" + MaLKH + "'").Rows.Count != 0)
             {
                 MessageBox.Show("Khong xoa duoc do van con khach hang thuoc loai khach hang nay");
                 return;
             }
 
-            exc.executeNonQuery("DELETE FROM LOAIKHACHHANG WHERE MaLoaiKH = '" + MaKH + "'");
+            exc.executeNonQuery("DELETE FROM LOAIKHACHHANG WHERE MaLoaiKH = '" + MaLKH + "'");
             showTable();
         }
     }

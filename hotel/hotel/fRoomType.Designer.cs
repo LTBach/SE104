@@ -63,7 +63,6 @@
             this.dataRoomType.RowTemplate.Height = 29;
             this.dataRoomType.Size = new System.Drawing.Size(972, 348);
             this.dataRoomType.TabIndex = 0;
-            this.dataRoomType.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataRoomType_CellContentClick);
             // 
             // groupBox1
             // 
@@ -79,7 +78,6 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chức Năng";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnEditRoomType
             // 

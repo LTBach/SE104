@@ -53,6 +53,7 @@ namespace hotel
                 exc.executeNonQuery("DELETE FROM CT_PHIEUTHUE WHERE MaPhieuThue = '" + MaPhieuThue + "'");
                 exc.executeNonQuery("DELETE FROM PHIEUTHUE WHERE MaPhieuThue = '" + MaPhieuThue + "'");
             }
+            MessageBox.Show("Xoa phieu thue thanh cong");
             showTable();
         }
     }

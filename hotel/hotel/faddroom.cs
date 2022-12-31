@@ -47,24 +47,19 @@ namespace hotel
             } 
             else
             {
-                try {
-                    string roomType = cbbRoomType.SelectedItem.ToString();
+                string roomType = cbbRoomType.SelectedItem.ToString();
 
-                    int roomId = exc.getID("MaPhong");
+                int roomId = exc.getID("MaPhong");
 
-                    DataTable dt = exc.executeQuery("SELECT MaLoaiPhong FROM LOAIPHONG WHERE TenLoaiPhong = '" + roomType + "'");
-                    string roomTypeId = dt.Rows[0]["MaLoaiPhong"].ToString();
+                DataTable dt = exc.executeQuery("SELECT MaLoaiPhong FROM LOAIPHONG WHERE TenLoaiPhong = '" + roomType + "'");
+                string roomTypeId = dt.Rows[0]["MaLoaiPhong"].ToString();
 
-                    exc.executeNonQuery("INSERT INTO DANHMUCPHONG VALUES('" + roomId.ToString() + "','" + txtRoomName.Text + "','Khong','" + roomTypeId + "','" + txtNote.Text + "')");
+                exc.executeNonQuery("INSERT INTO DANHMUCPHONG VALUES('" + roomId.ToString() + "','" + txtRoomName.Text + "','Khong','" + roomTypeId + "','" + txtNote.Text + "')");
 
-                    roomId = roomId + 1;
-                    exc.setID("MaPhong", roomId);
-                    //clearAddRoom();
-                    Close();
-                }
-                catch (Exception ex) {
-                    MessageBox.Show(ex.Message);
-                }
+                roomId++;
+                exc.setID("MaPhong", roomId);
+                MessageBox.Show("Them phong thanh cong");
+                Close();
             }
         }
         public void clearAddRoom()

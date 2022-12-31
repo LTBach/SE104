@@ -142,15 +142,34 @@ namespace hotel
             }
 
             exc.executeNonQuery("DELETE FROM DANHMUCPHONG WHERE TenPhong = '" + TenPhong + "'");
+            MessageBox.Show("Xoa phong thanh cong");
             showTable();
         }
 
         private void btnUpdateRoom_Click(object sender, EventArgs e)
         {
-            fUpdateRoom ur = new fUpdateRoom();
+            if (dataCatalog.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui long chon 1 dong");
+                return;
+            }
+
+            if (dataCatalog.SelectedRows.Count > 1)
+            {
+                MessageBox.Show("Vui long chi chon 1 dong");
+                return;
+            }
+
+            fUpdateRoom ur = new fUpdateRoom(dataCatalog.SelectedRows[0].Cells[0].Value.ToString());
             ur.Show();
+            ur.FormClosed += new FormClosedEventHandler(fUpdateRoom_Closed);
         }
 
+        void fUpdateRoom_Closed(object sender, FormClosedEventArgs e)
+        {
+            fUpdateRoom ur = (fUpdateRoom)sender;
+            showTable();
+        }
         private void btnRoomType_Click(object sender, EventArgs e)
         {
             fRoomType rt = new fRoomType();

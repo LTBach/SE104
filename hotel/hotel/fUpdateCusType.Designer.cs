@@ -39,18 +39,19 @@
             // 
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSave.Location = new System.Drawing.Point(460, 265);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(181, 68);
             this.btnSave.TabIndex = 9;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtHeSo
             // 
             this.txtHeSo.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtHeSo.Location = new System.Drawing.Point(340, 150);
-            this.txtHeSo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtHeSo.Margin = new System.Windows.Forms.Padding(4);
             this.txtHeSo.Name = "txtHeSo";
             this.txtHeSo.Size = new System.Drawing.Size(300, 44);
             this.txtHeSo.TabIndex = 8;
@@ -70,7 +71,7 @@
             // 
             this.txtCusTypeName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtCusTypeName.Location = new System.Drawing.Point(340, 32);
-            this.txtCusTypeName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCusTypeName.Margin = new System.Windows.Forms.Padding(4);
             this.txtCusTypeName.Name = "txtCusTypeName";
             this.txtCusTypeName.Size = new System.Drawing.Size(300, 44);
             this.txtCusTypeName.TabIndex = 6;
@@ -96,7 +97,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCusTypeName);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "fUpdateCusType";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
