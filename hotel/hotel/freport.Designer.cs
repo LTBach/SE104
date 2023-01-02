@@ -31,7 +31,10 @@
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataReport = new System.Windows.Forms.DataGridView();
+            this.loaiphong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tyleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.doanhthu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.class1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnDisplay = new System.Windows.Forms.Button();
@@ -39,12 +42,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cbbMonth = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.loaiphong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tyleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.doanhthu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataReport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.class1BindingSource)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -65,7 +65,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.dataGridView1);
+            this.groupBox3.Controls.Add(this.dataReport);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox3.Location = new System.Drawing.Point(24, 212);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
@@ -76,23 +76,44 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Báo Cáo";
             // 
-            // dataGridView1
+            // dataReport
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataReport.AutoGenerateColumns = false;
+            this.dataReport.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataReport.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.loaiphong,
             this.tyleDataGridViewTextBoxColumn,
             this.doanhthu});
-            this.dataGridView1.DataSource = this.class1BindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 46);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(1121, 406);
-            this.dataGridView1.TabIndex = 0;
+            this.dataReport.DataSource = this.class1BindingSource;
+            this.dataReport.Location = new System.Drawing.Point(8, 46);
+            this.dataReport.Margin = new System.Windows.Forms.Padding(4);
+            this.dataReport.Name = "dataReport";
+            this.dataReport.RowHeadersWidth = 51;
+            this.dataReport.RowTemplate.Height = 29;
+            this.dataReport.Size = new System.Drawing.Size(1121, 406);
+            this.dataReport.TabIndex = 0;
+            // 
+            // loaiphong
+            // 
+            this.loaiphong.DataPropertyName = "TenLoaiPhong";
+            this.loaiphong.HeaderText = "Loại Phòng";
+            this.loaiphong.MinimumWidth = 8;
+            this.loaiphong.Name = "loaiphong";
+            // 
+            // tyleDataGridViewTextBoxColumn
+            // 
+            this.tyleDataGridViewTextBoxColumn.DataPropertyName = "tyle";
+            this.tyleDataGridViewTextBoxColumn.HeaderText = "Tỷ lệ (%)";
+            this.tyleDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tyleDataGridViewTextBoxColumn.Name = "tyleDataGridViewTextBoxColumn";
+            // 
+            // doanhthu
+            // 
+            this.doanhthu.DataPropertyName = "DoanhThu";
+            this.doanhthu.HeaderText = "Doanh Thu";
+            this.doanhthu.MinimumWidth = 8;
+            this.doanhthu.Name = "doanhthu";
             // 
             // class1BindingSource
             // 
@@ -176,27 +197,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Tháng:";
             // 
-            // loaiphong
-            // 
-            this.loaiphong.DataPropertyName = "TenLoaiPhong";
-            this.loaiphong.HeaderText = "Loại Phòng";
-            this.loaiphong.MinimumWidth = 8;
-            this.loaiphong.Name = "loaiphong";
-            // 
-            // tyleDataGridViewTextBoxColumn
-            // 
-            this.tyleDataGridViewTextBoxColumn.DataPropertyName = "tyle";
-            this.tyleDataGridViewTextBoxColumn.HeaderText = "Tỷ lệ (%)";
-            this.tyleDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.tyleDataGridViewTextBoxColumn.Name = "tyleDataGridViewTextBoxColumn";
-            // 
-            // doanhthu
-            // 
-            this.doanhthu.DataPropertyName = "DoanhThu";
-            this.doanhthu.HeaderText = "Doanh Thu";
-            this.doanhthu.MinimumWidth = 8;
-            this.doanhthu.Name = "doanhthu";
-            // 
             // freport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -204,11 +204,13 @@
             this.ClientSize = new System.Drawing.Size(1211, 709);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "freport";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "BÁO CÁO";
             this.groupBox1.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataReport)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.class1BindingSource)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -220,7 +222,7 @@
 
         private GroupBox groupBox1;
         private GroupBox groupBox3;
-        private DataGridView dataGridView1;
+        private DataGridView dataReport;
         private GroupBox groupBox2;
         private Button btnDisplay;
         private TextBox txtYear;

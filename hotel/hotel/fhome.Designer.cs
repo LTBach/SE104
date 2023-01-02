@@ -36,6 +36,7 @@
             this.btn_search = new System.Windows.Forms.Button();
             this.btn_more = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnListRental = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_intro
@@ -48,7 +49,7 @@
             this.btn_intro.Location = new System.Drawing.Point(15, 15);
             this.btn_intro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_intro.Name = "btn_intro";
-            this.btn_intro.Size = new System.Drawing.Size(1221, 389);
+            this.btn_intro.Size = new System.Drawing.Size(1282, 389);
             this.btn_intro.TabIndex = 0;
             this.btn_intro.UseVisualStyleBackColor = false;
             this.btn_intro.Click += new System.EventHandler(this.btn_intro_Click);
@@ -63,7 +64,7 @@
             this.btn_catalog.Location = new System.Drawing.Point(15, 456);
             this.btn_catalog.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_catalog.Name = "btn_catalog";
-            this.btn_catalog.Size = new System.Drawing.Size(228, 232);
+            this.btn_catalog.Size = new System.Drawing.Size(198, 232);
             this.btn_catalog.TabIndex = 1;
             this.btn_catalog.Text = "Danh Mục";
             this.btn_catalog.UseVisualStyleBackColor = false;
@@ -76,10 +77,10 @@
             this.btn_report.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_report.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_report.ForeColor = System.Drawing.Color.Green;
-            this.btn_report.Location = new System.Drawing.Point(760, 456);
+            this.btn_report.Location = new System.Drawing.Point(886, 456);
             this.btn_report.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_report.Name = "btn_report";
-            this.btn_report.Size = new System.Drawing.Size(228, 232);
+            this.btn_report.Size = new System.Drawing.Size(198, 232);
             this.btn_report.TabIndex = 2;
             this.btn_report.Text = "Báo Cáo Tháng";
             this.btn_report.UseVisualStyleBackColor = false;
@@ -92,10 +93,10 @@
             this.btn_bill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_bill.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_bill.ForeColor = System.Drawing.Color.Green;
-            this.btn_bill.Location = new System.Drawing.Point(511, 456);
+            this.btn_bill.Location = new System.Drawing.Point(451, 456);
             this.btn_bill.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_bill.Name = "btn_bill";
-            this.btn_bill.Size = new System.Drawing.Size(228, 232);
+            this.btn_bill.Size = new System.Drawing.Size(198, 232);
             this.btn_bill.TabIndex = 3;
             this.btn_bill.Text = "Lập Hóa Đơn";
             this.btn_bill.UseVisualStyleBackColor = false;
@@ -108,10 +109,10 @@
             this.btn_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_search.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_search.ForeColor = System.Drawing.Color.Green;
-            this.btn_search.Location = new System.Drawing.Point(265, 456);
+            this.btn_search.Location = new System.Drawing.Point(232, 456);
             this.btn_search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_search.Name = "btn_search";
-            this.btn_search.Size = new System.Drawing.Size(228, 232);
+            this.btn_search.Size = new System.Drawing.Size(198, 232);
             this.btn_search.TabIndex = 4;
             this.btn_search.Text = "Tra Cứu Phòng";
             this.btn_search.UseVisualStyleBackColor = false;
@@ -124,10 +125,10 @@
             this.btn_more.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_more.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_more.ForeColor = System.Drawing.Color.Green;
-            this.btn_more.Location = new System.Drawing.Point(1009, 456);
+            this.btn_more.Location = new System.Drawing.Point(1100, 456);
             this.btn_more.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_more.Name = "btn_more";
-            this.btn_more.Size = new System.Drawing.Size(228, 232);
+            this.btn_more.Size = new System.Drawing.Size(198, 232);
             this.btn_more.TabIndex = 5;
             this.btn_more.Text = "Thêm";
             this.btn_more.UseVisualStyleBackColor = false;
@@ -137,12 +138,28 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(354, 409);
+            this.label1.Location = new System.Drawing.Point(371, 408);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(544, 32);
             this.label1.TabIndex = 6;
             this.label1.Text = "~.~ --------   HOTEL MANAGEMENT   -------- ~.~";
+            // 
+            // btnListRental
+            // 
+            this.btnListRental.BackColor = System.Drawing.Color.LemonChiffon;
+            this.btnListRental.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnListRental.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListRental.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnListRental.ForeColor = System.Drawing.Color.Green;
+            this.btnListRental.Location = new System.Drawing.Point(670, 456);
+            this.btnListRental.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnListRental.Name = "btnListRental";
+            this.btnListRental.Size = new System.Drawing.Size(198, 232);
+            this.btnListRental.TabIndex = 7;
+            this.btnListRental.Text = "Phiếu Thuê";
+            this.btnListRental.UseVisualStyleBackColor = false;
+            this.btnListRental.Click += new System.EventHandler(this.button1_Click);
             // 
             // fhome
             // 
@@ -150,7 +167,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1251, 704);
+            this.ClientSize = new System.Drawing.Size(1312, 704);
+            this.Controls.Add(this.btnListRental);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_more);
             this.Controls.Add(this.btn_search);
@@ -159,6 +177,7 @@
             this.Controls.Add(this.btn_catalog);
             this.Controls.Add(this.btn_intro);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
             this.Name = "fhome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HOME";
@@ -176,6 +195,6 @@
         private Button btn_search;
         private Button btn_more;
         private Label label1;
-
+        private Button btnListRental;
     }
 }

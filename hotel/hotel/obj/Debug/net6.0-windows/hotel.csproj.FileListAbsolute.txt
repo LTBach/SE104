@@ -152,3 +152,97 @@ C:\Users\Bach\Desktop\Workspace\SE104\hotel\hotel\obj\Debug\net6.0-windows\refin
 C:\Users\Bach\Desktop\Workspace\SE104\hotel\hotel\obj\Debug\net6.0-windows\hotel.pdb
 C:\Users\Bach\Desktop\Workspace\SE104\hotel\hotel\obj\Debug\net6.0-windows\hotel.genruntimeconfig.cache
 C:\Users\Bach\Desktop\Workspace\SE104\hotel\hotel\obj\Debug\net6.0-windows\ref\hotel.dll
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\bin\Debug\net6.0-windows\hotel.exe
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\bin\Debug\net6.0-windows\hotel.deps.json
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\bin\Debug\net6.0-windows\hotel.runtimeconfig.json
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\bin\Debug\net6.0-windows\hotel.dll
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\bin\Debug\net6.0-windows\ref\hotel.dll
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\bin\Debug\net6.0-windows\hotel.pdb
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.csproj.AssemblyReference.cache
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.faddroom.resources
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fadjust.resources
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fbill.resources
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fcatalog.resources
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fhome.resources
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.Form1.resources
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.Form2.resources
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.freport.resources
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.freserve.resources
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.freview.resources
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fsearch.resources
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.Properties.Resources.resources
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.csproj.GenerateResource.cache
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.GeneratedMSBuildEditorConfig.editorconfig
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.AssemblyInfoInputs.cache
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.AssemblyInfo.cs
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.csproj.CoreCompileInputs.cache
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.csproj.CopyComplete
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.dll
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\ref\hotel.dll
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.pdb
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.genruntimeconfig.cache
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fRoomType.resources
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fCustomerType.resources
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fListRental.resources
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fUpdateRoom.resources
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fAddRoomType.resources
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fUpdateRoomType.resources
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fAddCusType.resources
+D:\HOC_TAP\công nghệ phần mềm\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fUpdateCusType.resources
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.csproj.AssemblyReference.cache
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.dll
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\refint\hotel.dll
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.pdb
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\bin\Debug\net6.0-windows\hotel.exe
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\bin\Debug\net6.0-windows\hotel.deps.json
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\bin\Debug\net6.0-windows\hotel.runtimeconfig.json
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\bin\Debug\net6.0-windows\hotel.dll
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\bin\Debug\net6.0-windows\hotel.pdb
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fAddCusType.resources
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.faddroom.resources
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fAddRoomType.resources
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fadjust.resources
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fbill.resources
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fcatalog.resources
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fCustomerType.resources
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fhome.resources
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fListRental.resources
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.Form1.resources
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.Form2.resources
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.freport.resources
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.freserve.resources
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.freview.resources
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fRoomType.resources
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fsearch.resources
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fUpdateCusType.resources
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fUpdateRoom.resources
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.fUpdateRoomType.resources
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.Properties.Resources.resources
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.csproj.GenerateResource.cache
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.AssemblyInfoInputs.cache
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.AssemblyInfo.cs
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.csproj.CoreCompileInputs.cache
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.csproj.CopyComplete
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\hotel.genruntimeconfig.cache
+C:\Users\Bach\Downloads\SE104-main\SE104-main\hotel\hotel\obj\Debug\net6.0-windows\ref\hotel.dll
+C:\Users\Bach\Desktop\Workspace\SE104\hotel\hotel\obj\Debug\net6.0-windows\hotel.fAddCusType.resources
+C:\Users\Bach\Desktop\Workspace\SE104\hotel\hotel\obj\Debug\net6.0-windows\hotel.fAddRoomType.resources
+C:\Users\Bach\Desktop\Workspace\SE104\hotel\hotel\obj\Debug\net6.0-windows\hotel.fCustomerType.resources
+C:\Users\Bach\Desktop\Workspace\SE104\hotel\hotel\obj\Debug\net6.0-windows\hotel.fListRental.resources
+C:\Users\Bach\Desktop\Workspace\SE104\hotel\hotel\obj\Debug\net6.0-windows\hotel.fRoomType.resources
+C:\Users\Bach\Desktop\Workspace\SE104\hotel\hotel\obj\Debug\net6.0-windows\hotel.fUpdateCusType.resources
+C:\Users\Bach\Desktop\Workspace\SE104\hotel\hotel\obj\Debug\net6.0-windows\hotel.fUpdateRoom.resources
+C:\Users\Bach\Desktop\Workspace\SE104\hotel\hotel\obj\Debug\net6.0-windows\hotel.fUpdateRoomType.resources

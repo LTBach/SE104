@@ -57,6 +57,13 @@ namespace hotel
         {
             faddroom faddroom = new faddroom();
             faddroom.Show();
+            faddroom.FormClosed += new FormClosedEventHandler(faddroom_Closed);
+        }
+
+        void faddroom_Closed(object sender, FormClosedEventArgs e)
+        {
+            faddroom faddroom = (faddroom)sender;
+            showTable();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -85,7 +92,7 @@ namespace hotel
                     Price = txtPrice.Text;
                 }
 
-                dataGridView1.DataSource = exc.executeQuery("SELECT TenPhong, TenLoaiPhong, DonGiaTC, GhiChu FROM LOAIPHONG lp, DANHMUCPHONG dmp " +
+                dataCatalog.DataSource = exc.executeQuery("SELECT TenPhong, TenLoaiPhong, DonGiaTC, GhiChu FROM LOAIPHONG lp, DANHMUCPHONG dmp " +
                     "WHERE lp.MaLoaiPhong = dmp.MaLoaiPhong and TenPhong like '" + txtRoomName.Text + "%' and TenLoaiPhong like '"
                     + RoomType + "%' and DonGiaTC > " + Price + " and TinhTrang like '" + Status + "%'");
             }
@@ -114,20 +121,65 @@ namespace hotel
 
         private void btnDelRoom_Click(object sender, EventArgs e)
         {
-            //foreach (DataGridViewRow row in dataGridView1.SelectedRows)
-            //{
-            //    string roomId = exc.executeQuery("SELECT MaPhong FROM DANHMUCPHONG WHERE TenPhong = '"+ row.Cells[0].Value.ToString() + "'").Rows[0]["MaPhongS"].ToString();
+            if (dataCatalog.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui long chon 1 dong");
+                return;
+            }
 
-            //    exc.executeNonQuery("DELETE FROM PHIEUTHUE WHERE MaPhong = '" + roomId + "'");
+            if (dataCatalog.SelectedRows.Count > 1)
+            {
+                MessageBox.Show("Vui long chi chon 1 dong");
+                return;
+            }
 
-            //    exc.executeNonQuery("DELETE FROM DANHMUCPHONG WHERE MaPhong = '" + roomId + "'");
+            string TenPhong = dataCatalog.SelectedRows[0].Cells[0].Value.ToString();
 
-            //}
+            if (exc.executeQuery("SELECT * FROM PHIEUTHUE PT JOIN DANHMUCPHONG DMP ON PT.MaPhong = DMP.MaPhong WHERE TenPhong = '" +TenPhong+ "'").Rows.Count != 0)
+            {
+                MessageBox.Show("Khong xoa duoc phong do phong do van con phieu thue");
+                return;
+            }
+
+            exc.executeNonQuery("DELETE FROM DANHMUCPHONG WHERE TenPhong = '" + TenPhong + "'");
+            MessageBox.Show("Xoa phong thanh cong");
+            showTable();
         }
 
         private void btnUpdateRoom_Click(object sender, EventArgs e)
         {
-            
+            if (dataCatalog.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui long chon 1 dong");
+                return;
+            }
+
+            if (dataCatalog.SelectedRows.Count > 1)
+            {
+                MessageBox.Show("Vui long chi chon 1 dong");
+                return;
+            }
+
+            fUpdateRoom ur = new fUpdateRoom(dataCatalog.SelectedRows[0].Cells[0].Value.ToString());
+            ur.Show();
+            ur.FormClosed += new FormClosedEventHandler(fUpdateRoom_Closed);
+        }
+
+        void fUpdateRoom_Closed(object sender, FormClosedEventArgs e)
+        {
+            fUpdateRoom ur = (fUpdateRoom)sender;
+            showTable();
+        }
+        private void btnRoomType_Click(object sender, EventArgs e)
+        {
+            fRoomType rt = new fRoomType();
+            rt.Show();
+        }
+
+        private void btnCusType_Click(object sender, EventArgs e)
+        {
+            fCustomerType ct = new fCustomerType();
+            ct.Show();
         }
     }
 }

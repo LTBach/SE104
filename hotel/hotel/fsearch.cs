@@ -45,7 +45,15 @@ namespace hotel
             }
             freserve reserve = new freserve(dt.Rows[0]);
             reserve.Show();
+            reserve.FormClosed += new FormClosedEventHandler(freserve_Closed);
         }
+
+        void freserve_Closed(object sender, FormClosedEventArgs e)
+        {
+            freserve reserve = (freserve)sender;
+            showTable();
+        }
+
         public void showTable()
         {
             try
@@ -68,7 +76,7 @@ namespace hotel
                     Price = txtPrice.Text;
                 }
 
-                dataGridView1.DataSource = exc.executeQuery("SELECT MaPhong, TenPhong, TenLoaiPhong, DonGiaTC, TinhTrang FROM LOAIPHONG lp, DANHMUCPHONG dmp " +
+                dataSearch.DataSource = exc.executeQuery("SELECT MaPhong, TenPhong, TenLoaiPhong, DonGiaTC, TinhTrang FROM LOAIPHONG lp, DANHMUCPHONG dmp " +
                     "WHERE lp.MaLoaiPhong = dmp.MaLoaiPhong and TenPhong like '" + txtRoomName.Text + "%' and TenLoaiPhong like '"
                     + RoomType + "%' and DonGiaTC > " + Price + " and TinhTrang like '" + Status + "%'");
             }
